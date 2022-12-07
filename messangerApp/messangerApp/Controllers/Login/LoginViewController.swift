@@ -35,7 +35,7 @@ class LoginViewController: UIViewController {
         let email = UITextField(frame: .zero)
         email.translatesAutoresizingMaskIntoConstraints = false
         email.text = "Email"
-        email.backgroundColor = .systemBlue
+        email.backgroundColor = .white
         email.clearsOnInsertion = true
         email.returnKeyType = .continue
         email.layer.cornerRadius = 12
@@ -50,7 +50,7 @@ class LoginViewController: UIViewController {
         let pass = UITextField(frame: .zero)
         pass.translatesAutoresizingMaskIntoConstraints = false
         pass.text = "Password"
-        pass.backgroundColor = .systemBlue
+        pass.backgroundColor = .white
         pass.clearsOnInsertion = true
         pass.isSecureTextEntry = true
         pass.layer.cornerRadius = 12
@@ -68,7 +68,7 @@ class LoginViewController: UIViewController {
         butt.backgroundColor = .systemBlue
         butt.addTarget(self, action: #selector(buttPressed), for: .touchUpInside)
         butt.layer.cornerRadius = 12
-        butt.layer.borderWidth = 1
+        butt.layer.borderWidth = 2
         butt.layer.borderColor = UIColor.lightGray.cgColor
         return butt
     }()
@@ -78,7 +78,7 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         createUI()
         
-        view.backgroundColor = .white
+        view.backgroundColor = .systemBlue
         
         view.addSubview(scrollView)
         view.addSubview(imageView)
@@ -103,7 +103,7 @@ class LoginViewController: UIViewController {
         scrollView.frame = view.bounds
 
         let size = scrollView.width/3
-        imageView.frame = CGRect(x: (scrollView.width-size)/2, y: 75, width: size, height: size)
+        imageView.frame = CGRect(x: (scrollView.width-size)/2, y: 150, width: size, height: size)
 //
 //        emailTextField.frame = CGRect(x: 30, y: imageView.bottom+10, width: scrollView.width-60, height: 52)
 //
