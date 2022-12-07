@@ -7,4 +7,8 @@ target 'messangerApp' do
 
   # Pods for messangerApp
 
+pod 'MessageKit'
+pod 'JGProgressHUD'
+pod 'SDWebImage'
+
 end
