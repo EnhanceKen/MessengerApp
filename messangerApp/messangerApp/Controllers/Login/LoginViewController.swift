@@ -145,6 +145,7 @@ class LoginViewController: UIViewController {
     
     @objc
     func buttPressed() {
+      
         guard let email = emailTextField.text?.lowercased() else {return}
         guard let password = passwordTextField.text?.lowercased() else {return}
         
@@ -154,6 +155,9 @@ class LoginViewController: UIViewController {
             } else {
                 //next screen
                 print("success signing in")
+                
+                let navc = ConversationsViewController()
+                self.navigationController?.pushViewController(navc, animated: false)
             }
         }
     }

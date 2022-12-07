@@ -14,6 +14,8 @@ class ConversationsViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .red
 
+        DatabaseManager.shared.test()
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -21,14 +23,14 @@ class ConversationsViewController: UIViewController {
     
     }
     
-    private func validateAuth() {
-        if FirebaseAuth.Auth.auth().currentUser == nil {
-            let vc = LoginViewController()
-            let nav = UINavigationController(rootViewController: vc)
-            nav.modalPresentationStyle = .fullScreen
-            present(nav, animated: false)
-        }
-    }
+//    private func validateAuth() {
+//        if FirebaseAuth.Auth.auth().currentUser == nil {
+//            let vc = LoginViewController()
+//            let nav = UINavigationController(rootViewController: vc)
+//            nav.modalPresentationStyle = .fullScreen
+//            present(nav, animated: false)
+//        }
+//    }
 
 
 }
