@@ -9,10 +9,11 @@ import UIKit
 //import FirebaseCore
 //import FirebaseAuth
 import Firebase
+import JGProgressHUD
 
 
 class LoginViewController: UIViewController {
-    
+    private let spinner = JGProgressHUD(style: .dark)
     
     // Scroll View??
     private let scrollView: UIScrollView = {
@@ -145,11 +146,16 @@ class LoginViewController: UIViewController {
     
     @objc
     func buttPressed() {
-      
+        
         guard let email = emailTextField.text?.lowercased() else {return}
         guard let password = passwordTextField.text?.lowercased() else {return}
         
+        spinner.show(in: view)
+        
         Auth.auth().signIn(withEmail: email, password: password) { result, error in
+            DispatchQueue.main.async{
+             self.spinner.dismiss()
+            }
             if let err = error {
                 print("error signing in")
             } else {

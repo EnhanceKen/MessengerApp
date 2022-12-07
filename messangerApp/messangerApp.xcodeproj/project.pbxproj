@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0224EB582940696200B862A1 /* JGProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 0224EB572940696200B862A1 /* JGProgressHUD */; };
+		0224EB5A29406A9300B862A1 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0224EB5929406A9300B862A1 /* ChatViewController.swift */; };
 		024551F5293FE22800C599B2 /* ConversationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024551F4293FE22800C599B2 /* ConversationsViewController.swift */; };
 		024551F7293FE2DE00C599B2 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024551F6293FE2DE00C599B2 /* RegisterViewController.swift */; };
 		024551F9293FE31200C599B2 /* photoViewerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024551F8293FE31200C599B2 /* photoViewerViewController.swift */; };
@@ -52,6 +54,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0224EB5929406A9300B862A1 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		024551F4293FE22800C599B2 /* ConversationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationsViewController.swift; sourceTree = "<group>"; };
 		024551F6293FE2DE00C599B2 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		024551F8293FE31200C599B2 /* photoViewerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = photoViewerViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +103,7 @@
 				02C6FD0729393AF100F666B9 /* FirebaseAuthCombine-Community in Frameworks */,
 				02C6FD2529393AF100F666B9 /* FirebasePerformance in Frameworks */,
 				02C6FD1D29393AF100F666B9 /* FirebaseInAppMessagingSwift-Beta in Frameworks */,
+				0224EB582940696200B862A1 /* JGProgressHUD in Frameworks */,
 				02C6FD2B29393AF100F666B9 /* FirebaseStorage in Frameworks */,
 				02C6FD0F29393AF100F666B9 /* FirebaseDynamicLinks in Frameworks */,
 				02C6FD1329393AF100F666B9 /* FirebaseFirestoreCombine-Community in Frameworks */,
@@ -115,11 +119,12 @@
 		024551EE293FE12A00C599B2 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				024551FE293FE47100C599B2 /* Login */,
 				024551F4293FE22800C599B2 /* ConversationsViewController.swift */,
+				024551FE293FE47100C599B2 /* Login */,
 				024551F8293FE31200C599B2 /* photoViewerViewController.swift */,
 				024551FA293FE34500C599B2 /* NewConversationViewController.swift */,
 				024551FC293FE35900C599B2 /* ProfileViewController.swift */,
+				0224EB5929406A9300B862A1 /* ChatViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -222,7 +227,6 @@
 				6654E9D042CF39FC47676374 /* Pods-messangerApp.debug.xcconfig */,
 				95E6AD8516CCF53AC82B85FB /* Pods-messangerApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -272,6 +276,7 @@
 				02C6FD2829393AF100F666B9 /* FirebaseRemoteConfigSwift */,
 				02C6FD2A29393AF100F666B9 /* FirebaseStorage */,
 				02C6FD2C29393AF100F666B9 /* FirebaseStorageCombine-Community */,
+				0224EB572940696200B862A1 /* JGProgressHUD */,
 			);
 			productName = messangerApp;
 			productReference = 02C6FCE0293939A000F666B9 /* messangerApp.app */;
@@ -303,6 +308,7 @@
 			mainGroup = 02C6FCD7293939A000F666B9;
 			packageReferences = (
 				02C6FCF729393AF100F666B9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				0224EB562940696100B862A1 /* XCRemoteSwiftPackageReference "JGProgressHUD" */,
 			);
 			productRefGroup = 02C6FCE1293939A000F666B9 /* Products */;
 			projectDirPath = "";
@@ -376,6 +382,7 @@
 			files = (
 				02C6FCE8293939A000F666B9 /* LoginViewController.swift in Sources */,
 				02455200294004D900C599B2 /* Extensions.swift in Sources */,
+				0224EB5A29406A9300B862A1 /* ChatViewController.swift in Sources */,
 				02EFCFA3294045980004833E /* DatabaseManager.swift in Sources */,
 				024551FB293FE34500C599B2 /* NewConversationViewController.swift in Sources */,
 				024551F9293FE31200C599B2 /* photoViewerViewController.swift in Sources */,
@@ -603,6 +610,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		0224EB562940696100B862A1 /* XCRemoteSwiftPackageReference "JGProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/JonasGessner/JGProgressHUD";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 		02C6FCF729393AF100F666B9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -614,6 +629,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		0224EB572940696200B862A1 /* JGProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0224EB562940696100B862A1 /* XCRemoteSwiftPackageReference "JGProgressHUD" */;
+			productName = JGProgressHUD;
+		};
 		02C6FCF829393AF100F666B9 /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 02C6FCF729393AF100F666B9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;

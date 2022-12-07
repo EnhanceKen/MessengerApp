@@ -7,9 +7,11 @@
 
 import UIKit
 import FirebaseAuth
-import 
+import JGProgressHUD
 
 class ConversationsViewController: UIViewController {
+    
+    private let spinner = JGProgressHUD(style: .dark)
     
     private let tableview: UITableView = {
         let table = UITableView()
@@ -31,33 +33,40 @@ class ConversationsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .red
+//        view.backgroundColor = .red
         view.addSubview(tableview)
         view.addSubview(noConversationLabel)
         setupTableView()
         fetchConversations()
     }
     
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        tableview.frame = view.bounds
+    }
+    
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        validateAuth()
         
     }
     
-    //    private func validateAuth() {
-    //        if FirebaseAuth.Auth.auth().currentUser == nil {
-    //            let vc = LoginViewController()
-    //            let nav = UINavigationController(rootViewController: vc)
-    //            nav.modalPresentationStyle = .fullScreen
-    //            present(nav, animated: false)
-    //        }
-    //    }
+        private func validateAuth() {
+            if FirebaseAuth.Auth.auth().currentUser == nil {
+                let vc = LoginViewController()
+                let nav = UINavigationController(rootViewController: vc)
+                nav.modalPresentationStyle = .fullScreen
+                present(nav, animated: false)
+            }
+        }
     private func setupTableView() {
         tableview.delegate = self
         tableview.dataSource = self
     }
     
     private func fetchConversations(){
-        
+        tableview.isHidden = false
         
     }
 }
@@ -72,4 +81,15 @@ extension ConversationsViewController: UITableViewDelegate, UITableViewDataSourc
         cell.textLabel?.text = "Yerrr, Whats Good?"
         return cell
     }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+   
+        let vc = ChatViewController()
+        vc.title = "Kenny A"
+        vc.navigationItem.largeTitleDisplayMode = .never
+        navigationController?.pushViewController(vc, animated: true)
+        
+    }
+    
+    
 }
