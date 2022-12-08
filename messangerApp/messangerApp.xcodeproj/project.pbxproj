@@ -15,6 +15,9 @@
 		024551FB293FE34500C599B2 /* NewConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024551FA293FE34500C599B2 /* NewConversationViewController.swift */; };
 		024551FD293FE35900C599B2 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024551FC293FE35900C599B2 /* ProfileViewController.swift */; };
 		02455200294004D900C599B2 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024551FF294004D900C599B2 /* Extensions.swift */; };
+		02AFCA7A2941763100B8FE9F /* MessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AFCA792941763100B8FE9F /* MessageModel.swift */; };
+		02AFCA7C29418D0100B8FE9F /* ChatViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AFCA7B29418D0100B8FE9F /* ChatViewCell.swift */; };
+		02AFCA7E294192CB00B8FE9F /* Deleted Code.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AFCA7D294192CB00B8FE9F /* Deleted Code.swift */; };
 		02C6FCE4293939A000F666B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C6FCE3293939A000F666B9 /* AppDelegate.swift */; };
 		02C6FCE6293939A000F666B9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C6FCE5293939A000F666B9 /* SceneDelegate.swift */; };
 		02C6FCE8293939A000F666B9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C6FCE7293939A000F666B9 /* LoginViewController.swift */; };
@@ -61,6 +64,9 @@
 		024551FA293FE34500C599B2 /* NewConversationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewConversationViewController.swift; sourceTree = "<group>"; };
 		024551FC293FE35900C599B2 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		024551FF294004D900C599B2 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		02AFCA792941763100B8FE9F /* MessageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageModel.swift; sourceTree = "<group>"; };
+		02AFCA7B29418D0100B8FE9F /* ChatViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewCell.swift; sourceTree = "<group>"; };
+		02AFCA7D294192CB00B8FE9F /* Deleted Code.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Deleted Code.swift"; sourceTree = "<group>"; };
 		02C6FCE0293939A000F666B9 /* messangerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = messangerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02C6FCE3293939A000F666B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		02C6FCE5293939A000F666B9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -125,6 +131,7 @@
 				024551FA293FE34500C599B2 /* NewConversationViewController.swift */,
 				024551FC293FE35900C599B2 /* ProfileViewController.swift */,
 				0224EB5929406A9300B862A1 /* ChatViewController.swift */,
+				02AFCA7B29418D0100B8FE9F /* ChatViewCell.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -141,6 +148,7 @@
 		024551F0293FE12F00C599B2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				02AFCA792941763100B8FE9F /* MessageModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -159,6 +167,7 @@
 				02C6FCE5293939A000F666B9 /* SceneDelegate.swift */,
 				024551FF294004D900C599B2 /* Extensions.swift */,
 				02EFCFA2294045980004833E /* DatabaseManager.swift */,
+				02AFCA7D294192CB00B8FE9F /* Deleted Code.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -387,6 +396,9 @@
 				024551FB293FE34500C599B2 /* NewConversationViewController.swift in Sources */,
 				024551F9293FE31200C599B2 /* photoViewerViewController.swift in Sources */,
 				024551F7293FE2DE00C599B2 /* RegisterViewController.swift in Sources */,
+				02AFCA7C29418D0100B8FE9F /* ChatViewCell.swift in Sources */,
+				02AFCA7A2941763100B8FE9F /* MessageModel.swift in Sources */,
+				02AFCA7E294192CB00B8FE9F /* Deleted Code.swift in Sources */,
 				02C6FCE4293939A000F666B9 /* AppDelegate.swift in Sources */,
 				02C6FCE6293939A000F666B9 /* SceneDelegate.swift in Sources */,
 				024551FD293FE35900C599B2 /* ProfileViewController.swift in Sources */,

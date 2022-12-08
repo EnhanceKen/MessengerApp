@@ -87,13 +87,13 @@ class LoginViewController: UIViewController {
         scrollView.addSubview(signInButton)
      
         
-        let ref = Database.database().reference()
-        //        ref.childByAutoId().setValue(["name" : "kun", "role": "editor"])
-        ref.child("/messages/kun").setValue("12345")
-        ref.child("/messages/kun").observeSingleEvent(of: .value) { data in
-            print("*****************")
-            print(data)
-        }
+//        let ref = Database.database().reference()
+//        //        ref.childByAutoId().setValue(["name" : "kun", "role": "editor"])
+//        ref.child("/messages/kun").setValue("12345")
+//        ref.child("/messages/kun").observeSingleEvent(of: .value) { data in
+//            print("*****************")
+//            print(data)
+//        }
     
         
         }

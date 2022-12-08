@@ -87,7 +87,7 @@ extension ConversationsViewController: UITableViewDelegate, UITableViewDataSourc
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        cell.textLabel?.text = "Yerrr, Whats Good?"
+        cell.textLabel?.text = "Amigos Chat"
         cell.accessoryType = .disclosureIndicator
         return cell
     }
